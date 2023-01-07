@@ -1,7 +1,7 @@
 {
   "name": "jsonify",
   "displayName": "jsonify",
-  "description": "Convert JS Objects to JSON and vice versa",
+  "description": "Convert JS objects to JSON and vice versa",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
@@ -16,8 +16,9 @@
   "contributes": {
     "commands": [
       {
-        "command": "jsonify.helloWorld",
-        "title": "Hello World"
+        "command": "jsonify.toJSON",
+        "title": "Convert JS object to JSON",
+        "when": "editorHasSelection"
       }
     ]
   },
