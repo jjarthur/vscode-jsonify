@@ -1,3 +1,4 @@
+import * as json5 from 'json5';
 import * as vscode from 'vscode';
 
 export const toJSON = () => {
@@ -22,5 +23,4 @@ export const toJSON = () => {
   }
 };
 
-// eslint-disable-next-line no-eval
-const createObjectFromString = (str: string) => eval(`(() => (${str}))()`);
+export const createObjectFromString = (str: string) => json5.parse(str);
