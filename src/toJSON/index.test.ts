@@ -1,13 +1,13 @@
 import * as assert from 'assert';
 
-import { createObjectFromString } from './toJSON';
+import { createObjectFromString } from '.';
 
 const jsObjectString = `{
   a: 1,
   b: '2',
   c: [3, 4, 5],
   d: {
-    e: 6,
+    e: true,
     f: '2023-01-01T00:00:00Z',
   }
 }`;
@@ -17,12 +17,12 @@ const jsObject = {
   b: '2',
   c: [3, 4, 5],
   d: {
-    e: 6,
+    e: true,
     f: '2023-01-01T00:00:00Z',
   },
 };
 
-suite('jsonify', () => {
+suite('toJSON', () => {
   suite('createObjectFromString', () => {
     test('should succesfully convert JS object to JSON', () => {
       assert.equal(createObjectFromString(jsObjectString), jsObject);
