@@ -22,4 +22,5 @@ export const toJSON = () => {
   }
 };
 
+// eslint-disable-next-line no-eval
 const createObjectFromString = (str: string) => eval(`(() => (${str}))()`);
