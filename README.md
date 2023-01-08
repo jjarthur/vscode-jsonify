@@ -1,4 +1,4 @@
-# jsonify README
+# vscode-jsonify
 
 Convert JS objects to JSON and vice versa
 
