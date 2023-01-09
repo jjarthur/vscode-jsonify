@@ -2,18 +2,23 @@
   "name": "jsonify",
   "displayName": "jsonify",
   "description": "Convert JS objects to JSON and vice versa",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jjarthur/vscode-jsonify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjarthur/vscode-jsonify.git"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
     "Other"
   ],
+  "main": "./out/extension.js",
   "activationEvents": [
     "onCommand:jsonify.toJSON",
     "onCommand:jsonify.fromJSON"
   ],
-  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
