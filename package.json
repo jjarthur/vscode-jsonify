@@ -9,6 +9,10 @@
   "categories": [
     "Other"
   ],
+  "activationEvents": [
+    "onCommand:jsonify.toJSON",
+    "onCommand:jsonify.fromJSON"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
