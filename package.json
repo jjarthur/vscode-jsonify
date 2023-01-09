@@ -9,15 +9,17 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:jsonify.helloWorld"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "jsonify.toJSON",
         "title": "Convert JS object to JSON",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "jsonify.fromJSON",
+        "title": "Convert JSON to JS object",
         "when": "editorHasSelection"
       }
     ]
